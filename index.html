@@ -4,159 +4,242 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Banana Tech - Premium Digital Solutions</title>
+  <title>Banana Tech – Tecnología a tu Disposición</title>
   <meta name="description"
     content="Diseñamos las herramientas que tu empresa necesita para triunfar en el mundo digital.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Orbitron:wght@700&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,700&family=DM+Sans:wght@300;400;500;600&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-  <!-- Navigation / Hero -->
-  <header class="hero" id="mainSection">
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <a href="#" class="nav-logo">
+      <img src="Banana_Tech_Logo_Oficial-removebg-preview.png" alt="Banana Tech Logo">
+      <span class="nav-logo-text">Banana Tech</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#contacto-final">Contacto</a></li>
+    </ul>
+    <a href="#contacto-final" class="nav-cta">Agendar asesoría</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="mainSection">
+    <div class="hero-bg"></div>
+
     <div class="hero-content">
-      <h1 class="logo-title">
-        <span class="stencil">BANANA</span> <span class="tech-gradient">TECH</span>
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Tecnología a tu disposición
+      </div>
+      <h1>
+        Nutrimos tu negocio<br>
+        con <em>tecnología</em><br>
+        <span class="accent">inteligente</span>
       </h1>
-      <p class="hero-subtitle">Nutrimos tu negocio con tecnología.</p>
-      <a href="#contacto-final" class="btn btn-primary">Agendar Asesoría</a>
+      <p class="hero-sub">
+        Webs que venden, bots que atienden y datos que te orientan.
+        Soluciones prácticas para negocios reales.
+      </p>
+      <div class="hero-actions">
+        <a href="#contacto-final" class="btn btn-primary">Asesoría gratuita</a>
+        <a href="#servicios" class="btn btn-ghost">Ver servicios</a>
+      </div>
     </div>
-    <div class="hero-image">
-      <img src="blumonki.001.png" alt="Banana Tech Mascot">
-    </div>
-  </header>
 
-  <!-- About -->
-  <section class="section service-card glass-panel" id="sobre-nosotros">
-    <div class="section-text">
-      <h2 class="subtitle">Tu Socio en Soluciones Digitales</h2>
-      <p><strong>Diseñamos las herramientas que tu empresa necesita para triunfar en el mundo digital.</strong></p>
-      <p>Desde <b>sitios web que venden</b>, hasta <b>análisis de datos</b> que revelan oportunidades y <b>software que
-          automatiza tu éxito.</b></p>
-    </div>
-    <div class="section-image">
-      <img src="mono1.png" alt="Mono 1">
+    <div class="hero-visual">
+      <div class="hero-ring"></div>
+      <div class="hero-logo-wrap">
+        <img src="Banana_Tech_Logo_Oficial-removebg-preview.png" alt="Banana Tech">
+      </div>
     </div>
   </section>
 
-  <!-- Intro to Services -->
-  <section class="section text-center glass-panel" id="introduccion" style="max-width: 800px; margin: 4rem auto;">
-    <h2 class="subtitle">Soluciones para Impulsar tu Negocio</h2>
-    <p><strong>En Banana Tech creamos soluciones prácticas.</strong><br>
-      Nuestros servicios están diseñados para <b>resolver problemas reales, hacer tu vida más fácil</b> y <b>entregar
-        resultados visibles en tu negocio</b>.</p>
-    <img src="mono2.png" alt="Mono 2" class="float-img" style="max-width: 250px; margin-top: 2rem;">
-  </section>
-
-  <!-- Services Grid/List -->
-  <div class="services-container">
-
-    <!-- Service 1 -->
-    <section class="section service-card glass-panel" id="portafolio">
-      <div class="section-text">
-        <h2 class="subtitle">Webs que Convierten</h2>
-        <p>Tu web es tu <b>mejor vendedor, disponible 24/7</b>. Creamos <b>sitios modernos y rápidos</b>, diseñados para
-          que tus visitantes <b>te contacten o compren.</b></p>
-        <ul>
-          <li>Diseño web <b>profesional</b> y responsivo.</li>
-          <li>Diseño personalizado a tus necesidades.</li>
-          <li>Integración con redes y <b>Google Maps</b>.</li>
-          <li>Dominio incluido por un año.</li>
-        </ul>
-      </div>
-      <div class="section-image">
-        <img src="mono3.png" alt="Diseño Web">
-      </div>
-    </section>
-
-    <!-- Service 2 -->
-    <section class="section service-card glass-panel reversed" id="bots">
-      <div class="section-text">
-        <h2 class="subtitle">Bots de WhatsApp 24/7</h2>
-        <p>Evita perder clientes por demoras. Con <b>un asistente virtual</b>, tus clientes reciben atención <b>al
-            instante, en cualquier momento.</b></p>
-        <ul>
-          <li>Mensaje de <b>bienvenida automático</b>.</li>
-          <li><b>Menú interactivo</b> (horarios, servicios).</li>
-          <li>Respuestas a dudas comunes y FAQs.</li>
-          <li><b>Captura de datos</b> de prospectos.</li>
-        </ul>
-      </div>
-      <div class="section-image">
-        <img src="mono4.png" alt="Bots de WhatsApp">
-      </div>
-    </section>
-
-    <!-- Service 3 -->
-    <section class="section service-card glass-panel" id="google-maps">
-      <div class="section-text">
-        <h2 class="subtitle">Posicionamiento en Google</h2>
-        <p>Haz que tu negocio sea la <b>primera opción en tu zona</b>. Optimizamos tu presencia en Google para atraer a
-          más clientes locales.</p>
-        <ul>
-          <li><b>Creación y optimización</b> del Perfil.</li>
-          <li>Configuración de <b>horarios, servicios y fotos</b>.</li>
-          <li><b>Mayor visibilidad</b> en Google Maps.</li>
-          <li>Reporte inicial de rendimiento sobre búsquedas.</li>
-        </ul>
-      </div>
-      <div class="section-image">
-        <img src="mono5.png" alt="Google Maps SEO">
-      </div>
-    </section>
-
-    <!-- Service 4 -->
-    <section class="section service-card glass-panel reversed" id="analytics">
-      <div class="section-text">
-        <h2 class="subtitle">Inteligencia de Datos</h2>
-        <p>Deja de tomar decisiones a ciegas. Analizamos los <b>datos que tu negocio ya genera</b> para mostrarte
-          <b>dónde están tus oportunidades de crecimiento.</b>
-        </p>
-        <ul>
-          <li><b>Análisis del tráfico web</b> y visitantes.</li>
-          <li>Reportes de <b>rendimiento en Google</b>.</li>
-          <li>Interpretación de interacciones del bot.</li>
-          <li><b>Informe mensual</b> con estrategias.</li>
-        </ul>
-      </div>
-      <div class="section-image">
-        <img src="mono6.png" alt="Análisis de Datos">
-      </div>
-    </section>
+  <!-- STATS STRIP -->
+  <div class="stats-strip">
+    <div class="stat-item">
+      <div class="stat-number">+50</div>
+      <div class="stat-label">Negocios atendidos</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">24/7</div>
+      <div class="stat-label">Atención automatizada</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">4</div>
+      <div class="stat-label">Servicios especializados</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">100%</div>
+      <div class="stat-label">Hechos a medida</div>
+    </div>
   </div>
 
-  <!-- Final CTA -->
-  <section class="section contact-final glass-panel text-center" id="contacto-final"
-    style="margin-top: 5rem; margin-bottom: 5rem; max-width: 800px; margin-left: auto; margin-right: auto;">
-    <h2 class="subtitle">¿No sabes por dónde empezar? Hablemos.</h2>
-    <p style="margin-bottom: 2.5rem; font-size: 1.25rem;">Cada negocio es único. <b>Déjanos escucharte</b> y preparar un
-      <b>paquete a la medida</b> de tus metas y presupuesto.
-    </p>
-    <img src="mono7.png" alt="Contacto" class="float-img" style="max-width: 280px; margin-bottom: 2.5rem;">
-    <div>
-      <a href="#" class="btn btn-primary" style="font-size: 1.25rem; padding: 1.25rem 3rem;">Agendar una Asesoría
-        Gratuita</a>
+  <!-- SERVICES -->
+  <section class="services" id="servicios">
+    <div class="section-header reveal">
+      <div class="section-tag">Lo que hacemos</div>
+      <h2 class="section-title">Soluciones que <em>impulsan</em><br>tu negocio</h2>
+    </div>
+
+    <div class="services-grid">
+
+      <!-- Servicio 1 — Featured -->
+      <div class="service-card featured reveal" id="portafolio">
+        <div class="service-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="2" />
+            <path d="M3 9h18M9 21V9" />
+          </svg>
+        </div>
+        <h3>Webs que Convierten</h3>
+        <p>Tu web es tu mejor vendedor, disponible las 24 horas. Creamos sitios modernos y rápidos para que tus visitas
+          se conviertan en clientes.</p>
+        <ul class="service-features">
+          <li>Diseño profesional y responsivo</li>
+          <li>Personalizado a tus necesidades</li>
+          <li>Integración con redes y Google Maps</li>
+          <li>Dominio incluido el primer año</li>
+        </ul>
+      </div>
+
+      <!-- Servicio 2 -->
+      <div class="service-card reveal" id="bots">
+        <div class="service-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+          </svg>
+        </div>
+        <h3>Bots de WhatsApp 24/7</h3>
+        <p>Evita perder clientes por demoras. Con un asistente virtual tus clientes reciben atención al instante, en
+          cualquier momento.</p>
+        <ul class="service-features">
+          <li>Mensaje de bienvenida automático</li>
+          <li>Menú interactivo de servicios</li>
+          <li>Respuestas a preguntas frecuentes</li>
+          <li>Captura de datos de prospectos</li>
+        </ul>
+      </div>
+
+      <!-- Servicio 3 -->
+      <div class="service-card reveal" id="google-maps">
+        <div class="service-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+          </svg>
+        </div>
+        <h3>Posicionamiento en Google</h3>
+        <p>Haz que tu negocio sea la primera opción en tu zona. Optimizamos tu presencia local para atraer más clientes
+          cercanos.</p>
+        <ul class="service-features">
+          <li>Creación y optimización del perfil</li>
+          <li>Configuración de horarios, servicios y fotos</li>
+          <li>Mayor visibilidad en Google Maps</li>
+          <li>Reporte inicial de rendimiento</li>
+        </ul>
+      </div>
+
+      <!-- Servicio 4 -->
+      <div class="service-card reveal" id="analytics">
+        <div class="service-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="20" x2="18" y2="10" />
+            <line x1="12" y1="20" x2="12" y2="4" />
+            <line x1="6" y1="20" x2="6" y2="14" />
+          </svg>
+        </div>
+        <h3>Inteligencia de Datos</h3>
+        <p>Deja de tomar decisiones a ciegas. Analizamos los datos que tu negocio ya genera para mostrarte dónde están
+          tus oportunidades.</p>
+        <ul class="service-features">
+          <li>Análisis del tráfico web y visitantes</li>
+          <li>Reportes de rendimiento en Google</li>
+          <li>Interpretación de interacciones del bot</li>
+          <li>Informe mensual con estrategias</li>
+        </ul>
+      </div>
+
     </div>
   </section>
 
-  <!-- Original script keeping its original functionality-->
-  <script src="script.js"></script>
+  <!-- CONTACT -->
+  <section class="contact-section" id="contacto-final">
+    <div class="contact-inner reveal">
+      <div class="section-tag">Hablemos</div>
+      <h2 class="section-title">¿No sabes por<br>dónde <em>empezar</em>?</h2>
+      <p class="contact-sub">
+        Cada negocio es único. Cuéntanos tus metas y armamos un
+        paquete a tu medida — sin compromiso.
+      </p>
+
+      <div class="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="Tu nombre">
+          </div>
+          <div class="form-group">
+            <label for="whatsapp">WhatsApp</label>
+            <input type="tel" id="whatsapp" placeholder="+52 55 0000 0000">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="servicio">¿Qué necesita tu negocio?</label>
+          <select id="servicio">
+            <option value="">Selecciona un servicio…</option>
+            <option>Sitio web profesional</option>
+            <option>Bot de WhatsApp</option>
+            <option>Posicionamiento en Google</option>
+            <option>Análisis de datos</option>
+            <option>No sé, quiero asesoría</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Cuéntanos más (opcional)</label>
+          <textarea id="mensaje" placeholder="¿Qué hace tu negocio? ¿Cuál es tu mayor reto?"></textarea>
+        </div>
+        <button class="btn-submit">🍌 Quiero mi asesoría gratuita</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-brand">
+      <img src="Banana_Tech_Logo_Oficial-removebg-preview.png" alt="Banana Tech" class="footer-logo-img">
+      <div>
+        <div class="footer-logo-text">Banana Tech</div>
+        <div class="footer-tagline">Tecnología a tu disposición</div>
+      </div>
+    </div>
+    <div class="footer-copy">© 2026 Banana Tech · Hecho con ❤️🍌 en México</div>
+  </footer>
 
   <!-- WhatsApp floating button -->
-  <button class="Btn" id="whatsappBtn" aria-label="Contactar por WhatsApp">
-    <span class="svgContainer">
-      <svg viewBox="0 0 16 16" height="1.8em" class="svgIcon" fill="white">
+  <a class="wa-btn" id="whatsappBtn" href="https://wa.me/527779440777" target="_blank" rel="noopener"
+    aria-label="Contactar por WhatsApp">
+    <div class="wa-icon">
+      <svg viewBox="0 0 16 16" height="1.6em" fill="white">
         <path
-          d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z">
-        </path>
+          d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
       </svg>
-    </span>
-    <span class="BG"></span>
-  </button>
+    </div>
+    <span class="wa-label">¿Hablamos?</span>
+  </a>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
