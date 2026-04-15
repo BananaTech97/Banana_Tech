@@ -17,23 +17,24 @@
 
 <body>
 
-  <!-- NAVBAR -->
+  <!-- ── NAVBAR ── -->
   <nav id="navbar">
     <a href="#" class="nav-logo">
-      <img src="Banana_Tech_Logo_Oficial-removebg-preview.png" alt="Banana Tech Logo">
+      <img src="Banana_Tech_Logo_Oficial-removebg-preview.png" alt="Banana Tech">
       <span class="nav-logo-text">Banana Tech</span>
     </a>
     <ul class="nav-links">
+      <li><a href="#sobre-nosotros">Nosotros</a></li>
       <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#portafolio">Portafolio</a></li>
       <li><a href="#contacto-final">Contacto</a></li>
     </ul>
     <a href="#contacto-final" class="nav-cta">Agendar asesoría</a>
   </nav>
 
-  <!-- HERO -->
+  <!-- ── HERO ── -->
   <section class="hero" id="mainSection">
     <div class="hero-bg"></div>
-
     <div class="hero-content">
       <div class="hero-badge">
         <span class="badge-dot"></span>
@@ -53,7 +54,6 @@
         <a href="#servicios" class="btn btn-ghost">Ver servicios</a>
       </div>
     </div>
-
     <div class="hero-visual">
       <div class="hero-ring"></div>
       <div class="hero-logo-wrap">
@@ -62,7 +62,7 @@
     </div>
   </section>
 
-  <!-- STATS STRIP -->
+  <!-- ── STATS STRIP ── -->
   <div class="stats-strip">
     <div class="stat-item">
       <div class="stat-number">+50</div>
@@ -82,17 +82,75 @@
     </div>
   </div>
 
-  <!-- SERVICES -->
+  <!-- ── SOBRE NOSOTROS ── -->
+  <section class="about-section" id="sobre-nosotros">
+    <div class="about-inner">
+      <div class="about-text reveal">
+        <div class="section-tag">Quiénes somos</div>
+        <h2 class="section-title">Tecnología con<br><em>propósito humano</em></h2>
+        <p class="about-body">
+          Somos un equipo apasionado por resolver problemas reales con herramientas digitales.
+          Nacimos en Cuernavaca, Morelos, con la convicción de que cualquier negocio —sin importar su tamaño— merece
+          acceder a tecnología de calidad.
+        </p>
+        <p class="about-body">
+          No vendemos software genérico. Nos sentamos contigo, entendemos tu negocio y construimos
+          la solución que realmente necesitas.
+        </p>
+        <div class="about-values">
+          <div class="value-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round">
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+            Soluciones a medida
+          </div>
+          <div class="value-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round">
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+            Resultados visibles
+          </div>
+          <div class="value-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round">
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+            Acompañamiento real
+          </div>
+          <div class="value-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round">
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+            Precio justo
+          </div>
+        </div>
+      </div>
+      <div class="about-visual reveal">
+        <div class="about-img-wrap">
+          <img src="Banana_Tech_Logo_Oficial-removebg-preview.png" alt="Banana Tech">
+          <div class="about-badge-float">
+            <span class="about-badge-num">3+</span>
+            <span class="about-badge-label">años de experiencia</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SERVICIOS ── -->
   <section class="services" id="servicios">
     <div class="section-header reveal">
       <div class="section-tag">Lo que hacemos</div>
       <h2 class="section-title">Soluciones que <em>impulsan</em><br>tu negocio</h2>
+      <p class="section-sub">Toca cualquier servicio para conocer todos los detalles.</p>
     </div>
 
     <div class="services-grid">
 
-      <!-- Servicio 1 — Featured -->
-      <div class="service-card featured reveal" id="portafolio">
+      <div class="service-card featured reveal" data-service="web">
         <div class="service-icon">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round">
@@ -101,18 +159,18 @@
           </svg>
         </div>
         <h3>Webs que Convierten</h3>
-        <p>Tu web es tu mejor vendedor, disponible las 24 horas. Creamos sitios modernos y rápidos para que tus visitas
-          se conviertan en clientes.</p>
+        <p>Tu web es tu mejor vendedor, disponible 24/7. Sitios modernos y rápidos que convierten visitas en clientes.
+        </p>
         <ul class="service-features">
           <li>Diseño profesional y responsivo</li>
           <li>Personalizado a tus necesidades</li>
           <li>Integración con redes y Google Maps</li>
           <li>Dominio incluido el primer año</li>
         </ul>
+        <span class="card-cta-hint">Toca para más info →</span>
       </div>
 
-      <!-- Servicio 2 -->
-      <div class="service-card reveal" id="bots">
+      <div class="service-card reveal" data-service="bot">
         <div class="service-icon">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round">
@@ -120,18 +178,17 @@
           </svg>
         </div>
         <h3>Bots de WhatsApp 24/7</h3>
-        <p>Evita perder clientes por demoras. Con un asistente virtual tus clientes reciben atención al instante, en
-          cualquier momento.</p>
+        <p>Evita perder clientes por demoras. Un asistente virtual que atiende al instante, todo el día.</p>
         <ul class="service-features">
           <li>Mensaje de bienvenida automático</li>
           <li>Menú interactivo de servicios</li>
           <li>Respuestas a preguntas frecuentes</li>
           <li>Captura de datos de prospectos</li>
         </ul>
+        <span class="card-cta-hint">Toca para más info →</span>
       </div>
 
-      <!-- Servicio 3 -->
-      <div class="service-card reveal" id="google-maps">
+      <div class="service-card reveal" data-service="google">
         <div class="service-icon">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round">
@@ -140,18 +197,17 @@
           </svg>
         </div>
         <h3>Posicionamiento en Google</h3>
-        <p>Haz que tu negocio sea la primera opción en tu zona. Optimizamos tu presencia local para atraer más clientes
-          cercanos.</p>
+        <p>Haz que tu negocio sea la primera opción en tu zona. Más visibilidad local, más clientes.</p>
         <ul class="service-features">
           <li>Creación y optimización del perfil</li>
-          <li>Configuración de horarios, servicios y fotos</li>
+          <li>Configuración de horarios y fotos</li>
           <li>Mayor visibilidad en Google Maps</li>
           <li>Reporte inicial de rendimiento</li>
         </ul>
+        <span class="card-cta-hint">Toca para más info →</span>
       </div>
 
-      <!-- Servicio 4 -->
-      <div class="service-card reveal" id="analytics">
+      <div class="service-card reveal" data-service="datos">
         <div class="service-icon">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round">
@@ -161,61 +217,146 @@
           </svg>
         </div>
         <h3>Inteligencia de Datos</h3>
-        <p>Deja de tomar decisiones a ciegas. Analizamos los datos que tu negocio ya genera para mostrarte dónde están
-          tus oportunidades.</p>
+        <p>Deja de tomar decisiones a ciegas. Analizamos tus datos para mostrarte dónde están tus oportunidades.</p>
         <ul class="service-features">
           <li>Análisis del tráfico web y visitantes</li>
           <li>Reportes de rendimiento en Google</li>
           <li>Interpretación de interacciones del bot</li>
           <li>Informe mensual con estrategias</li>
         </ul>
+        <span class="card-cta-hint">Toca para más info →</span>
       </div>
 
     </div>
   </section>
 
-  <!-- CONTACT -->
+  <!-- ── MODAL ── -->
+  <div class="modal-overlay" id="serviceModal" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true">
+      <button class="modal-close" id="modalClose" aria-label="Cerrar">&times;</button>
+      <div class="modal-icon" id="modalIcon"></div>
+      <h3 class="modal-title" id="modalTitle"></h3>
+      <p class="modal-intro" id="modalIntro"></p>
+      <ul class="modal-features" id="modalFeatures"></ul>
+      <div class="modal-note" id="modalNote"></div>
+      <a href="#contacto-final" class="btn btn-primary modal-cta" id="modalCTA">Quiero este servicio</a>
+    </div>
+  </div>
+
+  <!-- ── PORTAFOLIO ── -->
+  <section class="portfolio-section" id="portafolio">
+    <div class="section-header reveal">
+      <div class="section-tag">Trabajos realizados</div>
+      <h2 class="section-title">Proyectos que <em>hablan</em><br>por nosotros</h2>
+      <p class="section-sub">Cada proyecto es la historia de un negocio que decidió crecer.</p>
+    </div>
+
+    <div class="portfolio-grid">
+
+      <a class="portfolio-card reveal" href="https://bananatech97.github.io/kill-plag-web/" target="_blank"
+        rel="noopener">
+        <div class="portfolio-img-wrap">
+          <div class="portfolio-placeholder" style="background: linear-gradient(135deg,#1a3d2e,#2d6a4f);">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.85)"
+              stroke-width="1.5" stroke-linecap="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+          </div>
+          <div class="portfolio-overlay"><span>Ver proyecto →</span></div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">Sitio web · Morelos</span>
+          <h4>Kill Plag Fumigaciones</h4>
+          <p>Landing page para empresa de control de plagas. Servicios, FAQ y contacto directo por WhatsApp.</p>
+        </div>
+      </a>
+
+      <a class="portfolio-card reveal" href="https://doble-alfa.github.io/Ariela_Asesora_Financiera/" target="_blank"
+        rel="noopener">
+        <div class="portfolio-img-wrap">
+          <div class="portfolio-placeholder" style="background: linear-gradient(135deg,#1a2d4a,#2c4e7a);">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.85)"
+              stroke-width="1.5" stroke-linecap="round">
+              <line x1="12" y1="1" x2="12" y2="23" />
+              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+            </svg>
+          </div>
+          <div class="portfolio-overlay"><span>Ver proyecto →</span></div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">Sitio web · Finanzas</span>
+          <h4>Ariela Vargas — Asesora Financiera</h4>
+          <p>Página personal para asesora certificada por la CONSAR. AFORE, inversiones y pensiones.</p>
+        </div>
+      </a>
+
+      <a class="portfolio-card reveal" href="https://doble-alfa.github.io/BALANCELAB/" target="_blank" rel="noopener">
+        <div class="portfolio-img-wrap">
+          <div class="portfolio-placeholder" style="background: linear-gradient(135deg,#1E4F4C,#2C6E6A);">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.85)"
+              stroke-width="1.5" stroke-linecap="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" />
+              <line x1="8" y1="21" x2="16" y2="21" />
+              <line x1="12" y1="17" x2="12" y2="21" />
+            </svg>
+          </div>
+          <div class="portfolio-overlay"><span>Ver proyecto →</span></div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">Sitio web · Contabilidad</span>
+          <h4>BalanceLab — Despacho Contable</h4>
+          <p>Presencia digital profesional para despacho contable. Diseño limpio que transmite confianza.</p>
+        </div>
+      </a>
+
+      <a class="portfolio-card reveal"
+        href="https://script.google.com/macros/s/AKfycbxwAqQmJqZljWvjWjtIQHOwPEP-PQR8LBfN8PXrMKBE93If-O9y7JRLVFOkNwC3axQKbA/exec"
+        target="_blank" rel="noopener">
+        <div class="portfolio-img-wrap">
+          <div class="portfolio-placeholder" style="background: linear-gradient(135deg,#3d2e1a,#8c6a2f);">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.85)"
+              stroke-width="1.5" stroke-linecap="round">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <path d="M16 10a4 4 0 0 1-8 0" />
+            </svg>
+          </div>
+          <div class="portfolio-overlay"><span>Ver proyecto →</span></div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">Sistema web · POS</span>
+          <h4>Sistema POS — Tiendas Locales</h4>
+          <p>Punto de venta en la nube con Google Apps Script. Inventario, ventas y reportes para pequeños comercios.
+          </p>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ── CONTACTO ── -->
   <section class="contact-section" id="contacto-final">
     <div class="contact-inner reveal">
-      <div class="section-tag">Hablemos</div>
+      <div class="section-tag" style="justify-content:center">Hablemos</div>
       <h2 class="section-title">¿No sabes por<br>dónde <em>empezar</em>?</h2>
       <p class="contact-sub">
-        Cada negocio es único. Cuéntanos tus metas y armamos un
-        paquete a tu medida — sin compromiso.
+        Cada negocio es único. Cuéntanos tus metas y armamos
+        un paquete a tu medida — sin compromiso.
       </p>
-
-      <div class="contact-form">
-        <div class="form-row">
-          <div class="form-group">
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" placeholder="Tu nombre">
-          </div>
-          <div class="form-group">
-            <label for="whatsapp">WhatsApp</label>
-            <input type="tel" id="whatsapp" placeholder="+52 55 0000 0000">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="servicio">¿Qué necesita tu negocio?</label>
-          <select id="servicio">
-            <option value="">Selecciona un servicio…</option>
-            <option>Sitio web profesional</option>
-            <option>Bot de WhatsApp</option>
-            <option>Posicionamiento en Google</option>
-            <option>Análisis de datos</option>
-            <option>No sé, quiero asesoría</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="mensaje">Cuéntanos más (opcional)</label>
-          <textarea id="mensaje" placeholder="¿Qué hace tu negocio? ¿Cuál es tu mayor reto?"></textarea>
-        </div>
-        <button class="btn-submit">🍌 Quiero mi asesoría gratuita</button>
-      </div>
+      <a class="btn-wa-cta"
+        href="https://wa.me/5217779440777?text=Hola%2C%20me%20interesa%20una%20asesor%C3%ADa%20con%20Banana%20Tech%20%F0%9F%8D%8C"
+        target="_blank" rel="noopener">
+        <svg viewBox="0 0 16 16" height="22" fill="currentColor">
+          <path
+            d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+        </svg>
+        Escribirnos por WhatsApp
+      </a>
+      <p class="contact-hint">Respondemos en menos de 24 hrs · Primera asesoría sin costo</p>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- ── FOOTER ── -->
   <footer>
     <div class="footer-brand">
       <img src="Banana_Tech_Logo_Oficial-removebg-preview.png" alt="Banana Tech" class="footer-logo-img">
@@ -224,12 +365,18 @@
         <div class="footer-tagline">Tecnología a tu disposición</div>
       </div>
     </div>
-    <div class="footer-copy">© 2026 Banana Tech · Hecho con ❤️🍌 en México</div>
+    <div class="footer-links">
+      <a href="#sobre-nosotros">Nosotros</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#portafolio">Portafolio</a>
+    </div>
+    <div class="footer-copy">© 2026 Banana Tech · Hecho con ❤️ 🍌 en Cuernavaca, Morelos</div>
   </footer>
 
-  <!-- WhatsApp floating button -->
-  <a class="wa-btn" id="whatsappBtn" href="https://wa.me/527779440777" target="_blank" rel="noopener"
-    aria-label="Contactar por WhatsApp">
+  <!-- ── WhatsApp flotante ── -->
+  <a class="wa-btn"
+    href="https://wa.me/5217779440777?text=Hola%2C%20me%20interesa%20una%20asesor%C3%ADa%20con%20Banana%20Tech%20%F0%9F%8D%8C"
+    target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
     <div class="wa-icon">
       <svg viewBox="0 0 16 16" height="1.6em" fill="white">
         <path
