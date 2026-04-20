@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bananatech97.github.io/Banana_Tech/sitemap.xml
